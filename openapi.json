@@ -30968,9 +30968,9 @@
             "description": "Number of times a secret ID can access the role, after which the secret ID will expire."
           },
           "secret_id_ttl": {
-            "type": "string",
+            "type": "integer",
             "description": "Duration in seconds after which the issued secret ID expires.",
-            "format": "duration"
+            "format": "int64"
           },
           "token_bound_cidrs": {
             "type": "array",
@@ -31025,9 +31025,9 @@
             "description": "Number of times a secret ID can access the role, after which the secret ID will expire."
           },
           "secret_id_ttl": {
-            "type": "string",
+            "type": "integer",
             "description": "Duration in seconds after which the issued secret ID expires.",
-            "format": "duration"
+            "format": "int64"
           },
           "token_bound_cidrs": {
             "type": "array",
@@ -31073,15 +31073,15 @@
         "type": "object",
         "properties": {
           "period": {
-            "type": "string",
+            "type": "integer",
             "description": "Use \"token_period\" instead. If this and \"token_period\" are both specified, only \"token_period\" will be used.",
-            "format": "duration",
+            "format": "int64",
             "deprecated": true
           },
           "token_period": {
-            "type": "string",
-            "description": "If set, tokens created via this role will have no max lifetime; instead, their renewal period will be fixed to this value. This takes an integer number of seconds, or a string duration (e.g. \"24h\").",
-            "format": "duration"
+            "type": "integer",
+            "description": "If set, tokens created via this role will have no max lifetime; instead, their renewal period will be fixed to this value. This takes an integer number of seconds.",
+            "format": "int64"
           }
         }
       },
@@ -31126,9 +31126,9 @@
             "description": "If true, the secret identifiers generated using this role will be cluster local. This can only be set during role creation and once set, it can't be reset later"
           },
           "period": {
-            "type": "string",
+            "type": "integer",
             "description": "Use \"token_period\" instead. If this and \"token_period\" are both specified, only \"token_period\" will be used.",
-            "format": "duration",
+            "format": "int64",
             "deprecated": true
           },
           "policies": {
@@ -31151,9 +31151,9 @@
             "description": "Number of times a secret ID can access the role, after which the secret ID will expire."
           },
           "secret_id_ttl": {
-            "type": "string",
+            "type": "integer",
             "description": "Duration in seconds after which the issued secret ID expires.",
-            "format": "duration"
+            "format": "int64"
           },
           "token_bound_cidrs": {
             "type": "array",
@@ -31163,14 +31163,14 @@
             }
           },
           "token_explicit_max_ttl": {
-            "type": "string",
+            "type": "integer",
             "description": "If set, tokens created via this role carry an explicit maximum TTL. During renewal, the current maximum TTL values of the role and the mount are not checked for changes, and any updates to these values will have no effect on the token being renewed.",
-            "format": "duration"
+            "format": "int64"
           },
           "token_max_ttl": {
-            "type": "string",
+            "type": "integer",
             "description": "The maximum lifetime of the generated token",
-            "format": "duration"
+            "format": "int64"
           },
           "token_no_default_policy": {
             "type": "boolean",
@@ -31181,9 +31181,9 @@
             "description": "The maximum number of times a token may be used, a value of zero means unlimited"
           },
           "token_period": {
-            "type": "string",
+            "type": "integer",
             "description": "If set, tokens created via this role will have no max lifetime; instead, their renewal period will be fixed to this value.",
-            "format": "duration"
+            "format": "int64"
           },
           "token_policies": {
             "type": "array",
@@ -31193,9 +31193,9 @@
             }
           },
           "token_ttl": {
-            "type": "string",
+            "type": "integer",
             "description": "The initial ttl of the token to generate",
-            "format": "duration"
+            "format": "int64"
           },
           "token_type": {
             "type": "string",
@@ -31229,9 +31229,9 @@
         "type": "object",
         "properties": {
           "secret_id_ttl": {
-            "type": "string",
+            "type": "integer",
             "description": "Duration in seconds after which the issued secret ID should expire. Defaults to 0, meaning no expiration.",
-            "format": "duration"
+            "format": "int64"
           }
         }
       },
@@ -31251,9 +31251,9 @@
         "type": "object",
         "properties": {
           "token_max_ttl": {
-            "type": "string",
+            "type": "integer",
             "description": "The maximum lifetime of the generated token",
-            "format": "duration"
+            "format": "int64"
           }
         }
       },
@@ -31270,9 +31270,9 @@
         "type": "object",
         "properties": {
           "token_ttl": {
-            "type": "string",
+            "type": "integer",
             "description": "The initial ttl of the token to generate",
-            "format": "duration"
+            "format": "int64"
           }
         }
       },
@@ -31350,9 +31350,9 @@
             "description": "Number of times a secret ID can access the role, after which the secret ID will expire."
           },
           "secret_id_ttl": {
-            "type": "string",
+            "type": "integer",
             "description": "Duration in seconds after which the issued secret ID expires.",
-            "format": "duration"
+            "format": "int64"
           }
         }
       },
@@ -31611,9 +31611,9 @@
             "description": "Number of times a secret ID can access the role, after which the secret ID will expire."
           },
           "secret_id_ttl": {
-            "type": "string",
+            "type": "integer",
             "description": "Duration in seconds after which the issued secret ID expires.",
-            "format": "duration"
+            "format": "int64"
           }
         }
       },
